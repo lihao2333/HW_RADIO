@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {第1章}实验背景}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}实验目的}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}数据的选择与说明}{1}{subsection.1.2}
+\contentsline {section}{\numberline {第2章}数据分析}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}全局分析}{1}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}南北分析}{1}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}东西分析}{3}{subsection.2.3}
+\contentsline {section}{\numberline {A}原始数据}{5}{appendix.A}

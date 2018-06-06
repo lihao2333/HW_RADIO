@@ -1,0 +1,42 @@
+\pagenumbering{arabic}
+
+\section{数据分析}
+
+ 	\subsection{全局分析}
+	图\ref{fig:all}展示的是信号强度在二位地理位置上的分布.
+	图中的四个红色的框分别代表教一, 主楼, 广场, 教二.
+	通过右边的colormap可以直观的感受到信号在地理分布上的规律.
+	\addfig[0.8]{all.png}{fig:all}{全局分析}  
+
+ \indent	从中可以看到如下事实
+	  \begin{enumerate}
+		\item 对于教二和教一来说, 南边的信号要比北边要强, 猜测信号源在学校的北边
+		\item 广场的信号分布相对均匀一些, 猜测是因为广场空间宽阔
+		\item 教一南到广场北和广场南到教二北有明显衰减, 猜测是因为广场周边的树造成的
+	  \end{enumerate}
+	
+ 	\subsection{南北分析}
+	为了分析信号在南北方向的分布规律, 我们把所有点在东西方向去平均, 得到图\ref{fig:sourth-north}
+	图中"oneS"代表教一南, "squareN"代表广场北
+	\addfig[0.8]{sorth-north.png}{fig:sourth-north}{南北分析}
+
+ \indent	从中可以看到如下事实
+		\begin{enumerate}
+		  \item 对于一个实体(广场, 教一, 教二), 南面信号比北面强, 猜测是因为信号源在学校南方
+		  \item	教二北比广场南的信号要弱, 这是唯一一个违背南强北弱规律的, 暂时无法解释
+		\end{enumerate}
+
+ \indent	求平均后的数据如表\ref{table:sourth-north-mean}
+	\input{body/table-sorth-north-mean}
+
+ \indent	根据衰落计算公式$$\Delta P = \frac{1}{N} \sum _{i=1} ^{N} P_i^{outside} -\frac{1}{M} \sum _{j=1} ^{M} P_j^{inside}$$可以得到表\ref{table:sorth-north-delta}
+	\input{body/table-sorth-north-delta}
+
+ 	\subsection{东西分析}
+	为了分析信号在东西方向的分布规律, 我们把所有的点在南北方向上取平均, 得到图\ref{fig:west-east}
+	图中x轴代表自西像东的第x个点
+	\addfig[0.8]{west-east.png}{fig:west-east}{东西分析}
+\\\indent	计算其统计特性可以得到表\ref{table:west-east-statistic}
+	\input{body/table-west-east-statistic}
+	
+
